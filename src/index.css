@@ -1,3 +1,28 @@
 body {
-  font-family: "Indie Flower", cursive;
+  color: white;
+  background-color: lightskyblue;
+  font-family: "Balsamiq Sans", cursive;
+}
+h1 {
+  font-size: 4rem;
+  text-shadow: 0.1rem 0.1rem black;
+}
+h1 span {
+  color: white;
+  font-family: "Bowlby One SC", cursive;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover,
+.active {
+  color: red !important;
+  transform: scale(1.2);
 }

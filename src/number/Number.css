@@ -1,16 +1,13 @@
 .number {
   display: inline-block;
-  background-color: lightskyblue;
-  padding: 1rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  margin: 1rem 1rem;
+  font-size: 3rem;
+  margin: 2rem 2rem;
+  text-shadow: 0.1rem 0.1rem black;
 }
 
 .number:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .number-inactive {

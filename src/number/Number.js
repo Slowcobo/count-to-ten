@@ -15,13 +15,20 @@ class Number extends Component {
   }
 
   render() {
+    // TODO: Implement rotation and translation
+    // let rotation = Math.floor(Math.random() * 10);
+    // let translation = Math.floor(Math.random() * 100);
+
     return (
-      <h1
+      <h3
         className={this.state.isActive ? "number" : "number number-inactive"}
         onClick={this.handleClick}
+        // style={{
+        //   transform: `rotate(${rotation}deg) translateY(${translation}px)`,
+        // }}
       >
         {this.props.number}
-      </h1>
+      </h3>
     );
   }
 }

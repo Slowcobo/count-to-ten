@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Game.css";
-import Number from "./Number";
+import Number from "../number/Number";
 
 class Game extends Component {
   constructor(props) {

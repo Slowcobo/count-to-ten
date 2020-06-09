@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
-import Number from "./Number";
-import Game from "./Game";
+
+import Content from "./Content";
 
 function App() {
   return (
     <div className="App">
-      <Game />
+
+      <Content />
     </div>
   );
 }
