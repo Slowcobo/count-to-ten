@@ -9,11 +9,11 @@ class Game extends Component {
     this.state = {
       numbers: this.randomizeOrder(),
       prevNumber: 0,
-      gameOver: false,
     };
 
     this.randomizeOrder = this.randomizeOrder.bind(this);
     this.clickNumber = this.clickNumber.bind(this);
+    this.newGame = this.newGame.bind(this);
   }
 
   randomizeOrder() {
@@ -31,20 +31,46 @@ class Game extends Component {
     if (number.props.number - this.state.prevNumber !== 1) {
       alert("WRONG");
     } else {
+      //Update the previous number
       this.setState({
         prevNumber: number.props.number,
+      });
+      //Disable the number component
+      number.setState({
+        isActive: false,
       });
     }
   }
 
+  newGame() {
+    this.setState({
+      numbers: this.randomizeOrder(),
+      prevNumber: 0,
+    });
+  }
+
   render() {
-    return (
+    const game = (
       <div id="game">
         {this.state.numbers.map((number) => (
           <Number key={number} number={number} clickNumber={this.clickNumber} />
         ))}
       </div>
     );
+
+    const gameOver = (
+      <div>
+        <h1>You did it!</h1>
+        <button onClick={this.newGame}>Play Again?</button>
+      </div>
+    );
+
+    //Handle game ending
+    if (this.state.prevNumber === 10) {
+      return gameOver;
+    } else {
+      return game;
+    }
   }
 }
 

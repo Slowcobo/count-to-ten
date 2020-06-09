@@ -4,6 +4,9 @@ import "./Number.css";
 class Number extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isActive: true,
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -13,7 +16,10 @@ class Number extends Component {
 
   render() {
     return (
-      <h1 className="number" onClick={this.handleClick}>
+      <h1
+        className={this.state.isActive ? "number" : "number number-inactive"}
+        onClick={this.handleClick}
+      >
         {this.props.number}
       </h1>
     );
