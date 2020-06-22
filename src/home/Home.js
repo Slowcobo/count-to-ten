@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Game from "./game/Game";
+import Game from "../game/Game";
 import Image from "react-bootstrap/Image";
 import "./Home.css";
 

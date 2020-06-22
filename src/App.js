@@ -3,8 +3,9 @@ import { Switch, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Home from "./Home";
+import Home from "./home/Home";
 import About from "./about/About";
+import Books from "./books/Books";
 import "./App.css";
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => <Home />} />
         <Route exact path="/about" render={() => <About />} />
-        <Route exact path="/books" render={() => <h1>Book Page</h1>} />
+        <Route exact path="/books" render={() => <Books />} />
         <Route exact path="/contact" render={() => <h1>Contact Page</h1>} />
       </Switch>
     </div>
