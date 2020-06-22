@@ -66,11 +66,12 @@ class Game extends Component {
     );
 
     //Handle game ending
-    if (this.state.prevNumber === 10) {
-      return gameOver;
-    } else {
-      return game;
-    }
+    return (
+      <div>
+        <h1>Count to Ten</h1>
+        {this.state.prevNumber === 10 ? gameOver : game}
+      </div>
+    );
   }
 }
 

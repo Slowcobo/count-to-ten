@@ -1,0 +1,23 @@
+.title {
+  animation: pop 0.5s;
+}
+
+.title h1 {
+  font-size: 4.5rem;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.8);
+}
+
+.title span {
+  color: #c5243a;
+  font-family: "Bowlby One SC", cursive;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

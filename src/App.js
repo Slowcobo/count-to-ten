@@ -1,9 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { NavLink } from "react-router-dom";
-import Content from "./Content";
+import Home from "./Home";
 import "./App.css";
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <Switch>
-        <Route exact path="/" render={() => <Content />} />
+        <Route exact path="/" render={() => <Home />} />
         <Route exact path="/about" render={() => <h1>About Page </h1>} />
         <Route exact path="/books" render={() => <h1>Book Page</h1>} />
         <Route exact path="/contact" render={() => <h1>Contact Page</h1>} />
