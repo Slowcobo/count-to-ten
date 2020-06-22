@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Home from "./home/Home";
 import About from "./about/About";
 import Books from "./books/Books";
+import Contact from "./contact/Contact";
 import "./App.css";
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
         <Route exact path="/" render={() => <Home />} />
         <Route exact path="/about" render={() => <About />} />
         <Route exact path="/books" render={() => <Books />} />
-        <Route exact path="/contact" render={() => <h1>Contact Page</h1>} />
+        <Route exact path="/contact" render={() => <Contact />} />
       </Switch>
     </div>
   );
