@@ -3,13 +3,9 @@ body {
   background-color: lightskyblue;
   font-family: "Balsamiq Sans", cursive;
 }
-h1 {
-  font-size: 4rem;
-  text-shadow: 0.1rem 0.1rem black;
-}
-h1 span {
-  color: white;
-  font-family: "Bowlby One SC", cursive;
+
+button:focus {
+  outline: none;
 }
 
 .navbar-toggler {
@@ -17,8 +13,10 @@ h1 span {
   padding: 0;
 }
 
-.nav-link {
+.nav-link,
+.navbar-brand {
   color: white !important;
+  font-size: 1.3rem;
 }
 
 .nav-link:hover,
