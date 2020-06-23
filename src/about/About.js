@@ -10,11 +10,11 @@ class About extends Component {
     return (
       <div className="About">
         <Row>
-          <h1 className="About-title">About Joan</h1>
+          <h1 className="page-title">About Joan</h1>
         </Row>
         <Row>
           <Col xs={12} md={4}>
-            <Image className="profile" src={profile} />
+            <Image className="About-img" src={profile} />
           </Col>
           <Col>
             <p>

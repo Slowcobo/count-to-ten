@@ -25,3 +25,7 @@ button:focus {
   color: red !important;
   transform: scale(1.2);
 }
+
+.page-title {
+  margin: 3rem auto;
+}
