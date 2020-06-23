@@ -88,9 +88,11 @@ class Game extends Component {
           <h1 className="page-title">Count to Ten</h1>
         </Row>
         <Row>
-          <div className="Game-container">
-            {this.state.prevNumber === 10 ? gameOver : game}
-          </div>
+          <Col>
+            <div className="Game-container">
+              {this.state.prevNumber === 10 ? gameOver : game}
+            </div>
+          </Col>
         </Row>
       </div>
     );
