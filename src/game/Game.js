@@ -9,6 +9,7 @@ class Game extends Component {
     this.state = {
       numbers: this.randomizeOrder(),
       prevNumber: 0,
+      tryAgain: false,
     };
 
     this.randomizeOrder = this.randomizeOrder.bind(this);
@@ -29,7 +30,16 @@ class Game extends Component {
 
   clickNumber(number) {
     if (number.props.number - this.state.prevNumber !== 1) {
-      alert("WRONG");
+      this.setState(
+        {
+          tryAgain: true,
+        },
+        () => {
+          setTimeout(() => {
+            this.setState({ tryAgain: false });
+          }, 600);
+        }
+      );
     } else {
       //Update the previous number
       this.setState({
@@ -46,12 +56,16 @@ class Game extends Component {
     this.setState({
       numbers: this.randomizeOrder(),
       prevNumber: 0,
+      tryAgain: false,
     });
   }
 
   render() {
     const game = (
-      <div id="game">
+      <div className="Game">
+        <div className={`try-again ${this.state.tryAgain && "show"}`}>
+          <h1>Try Again!</h1>
+        </div>
         {this.state.numbers.map((number) => (
           <Number key={number} number={number} clickNumber={this.clickNumber} />
         ))}
@@ -59,7 +73,7 @@ class Game extends Component {
     );
 
     const gameOver = (
-      <div>
+      <div className="winner">
         <h1>You did it!</h1>
         <button onClick={this.newGame}>Play Again?</button>
       </div>
@@ -69,7 +83,9 @@ class Game extends Component {
     return (
       <div>
         <h1>Count to Ten</h1>
-        {this.state.prevNumber === 10 ? gameOver : game}
+        <div className="Game-container">
+          {this.state.prevNumber === 10 ? gameOver : game}
+        </div>
       </div>
     );
   }

@@ -21,11 +21,8 @@ class Number extends Component {
 
     return (
       <h3
-        className={this.state.isActive ? "number" : "number number-inactive"}
+        className={this.state.isActive ? "Number" : "Number Number-inactive"}
         onClick={this.handleClick}
-        // style={{
-        //   transform: `rotate(${rotation}deg) translateY(${translation}px)`,
-        // }}
       >
         {this.props.number}
       </h3>

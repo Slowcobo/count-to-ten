@@ -1,16 +1,16 @@
-.number {
+.Number {
   display: inline-block;
-  font-size: 5vw;
-  margin: 2rem 2rem;
+  font-size: 3rem;
+  margin: 1rem 1.5rem;
   text-shadow: 0.1rem 0.1rem black;
 }
 
-.number:hover {
+.Number:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
 
-.number-inactive {
+.Number-inactive {
   pointer-events: none;
   opacity: 0;
   transition: 1s ease;
