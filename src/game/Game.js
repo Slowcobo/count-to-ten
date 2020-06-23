@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import "./Game.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Number from "../number/Number";
+import "./Game.css";
 
 class Game extends Component {
   constructor(props) {
@@ -82,10 +84,14 @@ class Game extends Component {
     //Handle game ending
     return (
       <div>
-        <h1>Count to Ten</h1>
-        <div className="Game-container">
-          {this.state.prevNumber === 10 ? gameOver : game}
-        </div>
+        <Row>
+          <h1 className="page-title">Count to Ten</h1>
+        </Row>
+        <Row>
+          <div className="Game-container">
+            {this.state.prevNumber === 10 ? gameOver : game}
+          </div>
+        </Row>
       </div>
     );
   }

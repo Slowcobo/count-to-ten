@@ -1,12 +1,16 @@
 body {
   color: white;
   font-size: 20px;
-  background-color: lightskyblue;
+  background-color: #85ceeb;
   font-family: "Balsamiq Sans", cursive;
 }
 
 button:focus {
   outline: none;
+}
+
+.navbar {
+  text-align: center;
 }
 
 .navbar-toggler {
@@ -23,7 +27,6 @@ button:focus {
 .nav-link:hover,
 .active {
   color: red !important;
-  transform: scale(1.2);
 }
 
 .page-title {
