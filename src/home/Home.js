@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Game from "../game/Game";
 import Image from "react-bootstrap/Image";
-// import zowenmain from "./zowen-main.png";
+import zowen from "./zowen.png";
 import "./Home.css";
 
 class Content extends Component {
@@ -11,13 +11,25 @@ class Content extends Component {
     return (
       <div className="Home">
         <Row>
-          <div className="title">
-            <h1>
-              And <span>Zowen</span> Makes 10!
-            </h1>
-          </div>
+          <Col className="d-none d-sm-flex zowen-img-container">
+            <Image className="zowen-img" src={zowen} fluid />
+          </Col>
+          <Col sm={6} className="title-container">
+            <div className="title">
+              <h1>
+                And <p>Zowen</p> Makes 10!
+              </h1>
+            </div>
+          </Col>
         </Row>
         <Game />
+        <Row>
+          <Col>
+            <div className="footer">
+              <h1>Footer to go here</h1>
+            </div>
+          </Col>
+        </Row>
       </div>
     );
   }

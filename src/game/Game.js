@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 import Number from "../number/Number";
+import beverly from "./zowen-beverly.png";
 import "./Game.css";
 
 class Game extends Component {
@@ -75,9 +77,11 @@ class Game extends Component {
     );
 
     const gameOver = (
-      <div className="winner">
-        <h1>You did it!</h1>
-        <button onClick={this.newGame}>Play Again?</button>
+      <div className="Game">
+        <div className="winner">
+          <h1>You did it!</h1>
+          <button onClick={this.newGame}>Play Again?</button>
+        </div>
       </div>
     );
 
@@ -89,6 +93,7 @@ class Game extends Component {
         </Row>
         <Row>
           <Col>
+            <Image className="beverly-img" src={beverly} />
             <div className="Game-container">
               {this.state.prevNumber === 10 ? gameOver : game}
             </div>

@@ -1,15 +1,41 @@
+.Home {
+  margin-top: 2rem;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
 .title {
   animation: pop 0.5s;
+  text-align: center;
 }
 
 .title h1 {
+  color: #000;
   font-size: 4.5rem;
+}
+
+.title p {
+  color: #c5243a;
+  font-size: 5.5rem;
+  font-family: "Bowlby One SC", cursive;
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.8);
 }
 
-.title span {
-  color: #c5243a;
-  font-family: "Bowlby One SC", cursive;
+.zowen-img {
+  max-height: 400px;
+}
+
+.zowen-img-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer {
+  margin: 4rem;
 }
 
 @keyframes pop {
