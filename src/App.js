@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Home from "./home/Home";
 import About from "./about/About";
 import Books from "./books/Books";
+import Game from "./game/Game";
 import Contact from "./contact/Contact";
 import "./App.css";
 
@@ -27,6 +28,14 @@ class App extends Component {
                   activeClassName="active"
                 >
                   Home
+                </NavLink>
+                <NavLink
+                  exact
+                  to="/play"
+                  className="nav-link"
+                  activeClassName="active"
+                >
+                  Play
                 </NavLink>
                 <NavLink
                   exact
@@ -59,6 +68,7 @@ class App extends Component {
             <Route exact path="/" render={() => <Home />} />
             <Route exact path="/about" render={() => <About />} />
             <Route exact path="/books" render={() => <Books />} />
+            <Route exact path="/play" render={() => <Game />} />
             <Route exact path="/contact" render={() => <Contact />} />
           </Switch>
         </Container>

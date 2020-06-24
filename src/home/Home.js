@@ -22,7 +22,6 @@ class Content extends Component {
             </div>
           </Col>
         </Row>
-        <Game />
         <Row>
           <Col>
             <div className="footer">
