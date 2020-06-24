@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Game from "../game/Game";
 import Image from "react-bootstrap/Image";
 import zowen from "./zowen.png";
+import Showcase from "../showcase/Showcase";
 import "./Home.css";
 
 class Content extends Component {
@@ -22,6 +22,8 @@ class Content extends Component {
             </div>
           </Col>
         </Row>
+        {/* Book Showcase */}
+        <Showcase />
         <Row>
           <Col>
             <div className="footer">

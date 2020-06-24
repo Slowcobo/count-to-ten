@@ -1,0 +1,27 @@
+.Showcase {
+  margin: 6rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Showcase-book {
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
+}
+
+.Showcase-buy {
+  margin: auto;
+}
+
+.Showcase-description {
+  text-align: center;
+  margin: 1rem 2rem;
+}
+
+.Showcase-out {
+  background-color: red;
+  position: absolute;
+  top: -5%;
+  left: 35%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
