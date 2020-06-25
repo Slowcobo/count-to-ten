@@ -10,17 +10,13 @@ class Showcase extends Component {
   render() {
     return (
       <div className="Showcase">
-        <Row>
-          <Col sm={4}>
-            <Image className="Showcase-book" src={zowenmakes10} fluid />
-            <div className="Showcase-out">Out Now!</div>
-            <p className="Showcase-description">
-              And Zowen Makes 10! is a delightful book that children will love
-              to read over and over again!
-            </p>
-            <Button className="Showcase-buy">Buy the Book</Button>
-          </Col>
-        </Row>
+        <Image className="Showcase-book" src={zowenmakes10} fluid />
+        <div className="Showcase-out">Out Now!</div>
+        <p className="Showcase-description">
+          And Zowen Makes 10! is a delightful book that children will love to
+          read over and over again!
+        </p>
+        <Button className="Showcase-buy">Buy the Book</Button>
       </div>
     );
   }

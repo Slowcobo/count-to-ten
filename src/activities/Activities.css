@@ -1,0 +1,12 @@
+.Activities {
+  margin: 6rem auto;
+}
+
+.Activity-preview {
+  display: block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 1rem auto;
+}

@@ -4,12 +4,14 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import zowen from "./zowen.png";
 import Showcase from "../showcase/Showcase";
+import Activities from "../activities/Activities";
 import "./Home.css";
 
 class Content extends Component {
   render() {
     return (
       <div className="Home">
+        {/* Header/Title */}
         <Row>
           <Col className="d-none d-sm-flex zowen-img-container">
             <Image className="zowen-img" src={zowen} fluid />
@@ -22,8 +24,20 @@ class Content extends Component {
             </div>
           </Col>
         </Row>
-        {/* Book Showcase */}
-        <Showcase />
+
+        <Row>
+          {/* Book Showcase */}
+          <Col sm={4}>
+            <Showcase />
+          </Col>
+
+          <Col sm={4}>
+            {/* Activities */}
+            <Activities />
+          </Col>
+        </Row>
+
+        {/* Footer */}
         <Row>
           <Col>
             <div className="footer">
