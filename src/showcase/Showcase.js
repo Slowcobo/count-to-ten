@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Image from "react-bootstrap/Image";
 import zowenmakes10 from "./zowenmakes10.png";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import "./Showcase.css";
 

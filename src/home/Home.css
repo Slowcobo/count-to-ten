@@ -2,6 +2,37 @@
   margin-top: 2rem;
 }
 
+.Home-header {
+}
+
+.Home-content::before {
+  background-image: url("./separator.png");
+  background-repeat: repeat-x;
+  content: "";
+  position: absolute;
+  margin-top: -415px;
+  height: 415px;
+  width: 100%;
+  z-index: -1;
+}
+
+.Home-content {
+  background-color: #80bbdc;
+  background-image: url("./zowen-characters.png");
+  background-position: bottom center;
+  background-size: auto 600px;
+  background-repeat: repeat-x;
+  padding-bottom: 30rem;
+}
+
+.Home-footer {
+  background-color: #d3c5c6;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+  padding: 1rem;
+  padding-left: 5rem;
+}
+
 .title-container {
   display: flex;
   align-items: center;
@@ -15,7 +46,7 @@
 
 .title h1 {
   color: #000;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .title p {
@@ -26,17 +57,13 @@
 }
 
 .zowen-img {
-  max-height: 400px;
+  height: 400px;
 }
 
 .zowen-img-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-}
-
-.footer {
-  margin: 4rem;
 }
 
 @keyframes pop {

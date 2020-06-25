@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -11,40 +12,49 @@ class Content extends Component {
   render() {
     return (
       <div className="Home">
-        {/* Header/Title */}
-        <Row className="justify-content-center">
-          <Col sm={3} className="d-none d-sm-flex zowen-img-container">
-            <Image className="zowen-img" src={zowen} fluid />
-          </Col>
-          <Col sm={3} className="title-container">
-            <div className="title">
-              <h1>
-                And <p>Zowen</p> Makes 10!
-              </h1>
-            </div>
-          </Col>
-        </Row>
+        {/* Header */}
+        <header className="Home-header">
+          <Container>
+            <Row>
+              <Col sm={6} className="zowen-img-container">
+                <Image className="zowen-img" src={zowen} />
+              </Col>
+              <Col sm={6} className="title-container">
+                <div className="title">
+                  <h1>
+                    And <p>Zowen</p> Makes 10!
+                  </h1>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </header>
 
-        <Row className="justify-content-center">
-          {/* Book Showcase */}
-          <Col sm={3}>
-            <Showcase />
-          </Col>
+        {/* Main Content */}
+        <main className="Home-content">
+          <Container>
+            <Row>
+              {/* Book Showcase */}
+              <Col sm={6}>
+                <Showcase />
+              </Col>
 
-          <Col sm={3}>
-            {/* Activities */}
-            <Activities />
-          </Col>
-        </Row>
+              <Col sm={6}>
+                {/* Activities */}
+                <Activities />
+              </Col>
+            </Row>
+          </Container>
+        </main>
 
         {/* Footer */}
-        <Row>
-          <Col>
-            <div className="footer">
-              <h1>Footer to go here</h1>
-            </div>
-          </Col>
-        </Row>
+        <div className="Home-footer">
+          <Container>
+            <Row className="justify-content-center">
+              <Col>Copyright © 2020 by Joan Parnell</Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     );
   }

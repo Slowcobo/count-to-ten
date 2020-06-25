@@ -65,15 +65,13 @@ class App extends Component {
             </Navbar.Collapse>
           </Navbar>
         </Container>
-        <Container fluid>
-          <Switch>
-            <Route exact path="/" render={() => <Home />} />
-            <Route exact path="/about" render={() => <About />} />
-            <Route exact path="/books" render={() => <Books />} />
-            <Route exact path="/play" render={() => <Game />} />
-            <Route exact path="/contact" render={() => <Contact />} />
-          </Switch>
-        </Container>
+        <Switch>
+          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/books" render={() => <Books />} />
+          <Route exact path="/play" render={() => <Game />} />
+          <Route exact path="/contact" render={() => <Contact />} />
+        </Switch>
       </div>
     );
   }
