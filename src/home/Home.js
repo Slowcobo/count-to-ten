@@ -12,11 +12,11 @@ class Content extends Component {
     return (
       <div className="Home">
         {/* Header/Title */}
-        <Row>
-          <Col className="d-none d-sm-flex zowen-img-container">
+        <Row className="justify-content-center">
+          <Col sm={3} className="d-none d-sm-flex zowen-img-container">
             <Image className="zowen-img" src={zowen} fluid />
           </Col>
-          <Col sm={6} className="title-container">
+          <Col sm={3} className="title-container">
             <div className="title">
               <h1>
                 And <p>Zowen</p> Makes 10!
@@ -25,13 +25,13 @@ class Content extends Component {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="justify-content-center">
           {/* Book Showcase */}
-          <Col sm={4}>
+          <Col sm={3}>
             <Showcase />
           </Col>
 
-          <Col sm={4}>
+          <Col sm={3}>
             {/* Activities */}
             <Activities />
           </Col>

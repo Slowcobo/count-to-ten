@@ -4,11 +4,11 @@ import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Home from "./home/Home";
-import About from "./about/About";
-import Books from "./books/Books";
-import Game from "./game/Game";
-import Contact from "./contact/Contact";
+import Home from "../home/Home";
+import About from "../about/About";
+import Books from "../books/Books";
+import Game from "../game/Game";
+import Contact from "../contact/Contact";
 import "./App.css";
 
 class App extends Component {
@@ -64,6 +64,8 @@ class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+        </Container>
+        <Container fluid>
           <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route exact path="/about" render={() => <About />} />

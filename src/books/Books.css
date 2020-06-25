@@ -1,3 +1,8 @@
+.Books {
+  display: flex;
+  justify-content: center;
+}
+
 .Book-img {
   width: 100%;
 }
