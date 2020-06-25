@@ -9,7 +9,6 @@ class Showcase extends Component {
     return (
       <div className="Showcase">
         <Image className="Showcase-book" src={zowenmakes10} fluid />
-        <div className="Showcase-out">Out Now!</div>
         <p className="Showcase-description">
           And Zowen Makes 10! is a delightful book that children will love to
           read over and over again!
