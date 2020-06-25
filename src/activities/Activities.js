@@ -7,10 +7,10 @@ class Activities extends Component {
   render() {
     return (
       <div className="Activities">
-        <Image className="Activity-preview" src="" />
+        <Image className="Activity-preview" src="" fluid />
         <Button>Meet the Characters</Button>
 
-        <Image className="Activity-preview" src="" />
+        <Image className="Activity-preview" src="" fluid />
         <Button>Play the Game</Button>
       </div>
     );
