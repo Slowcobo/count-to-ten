@@ -1,16 +1,16 @@
 body {
   color: white;
+  background-color: #f3f3f3;
   font-size: 20px;
-  background-color: skyblue;
-  font-family: "Balsamiq Sans", cursive;
-}
-
-.App {
-  overflow: hidden;
+  font-family: "Patrick Hand", cursive;
 }
 
 button:focus {
   outline: none;
+}
+
+.App {
+  overflow: hidden;
 }
 
 .navbar {
@@ -22,17 +22,27 @@ button:focus {
   padding: 0;
 }
 
-.nav-link,
 .navbar-brand {
-  color: white !important;
-  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-size: 3rem;
+  font-family: "Londrina Solid", cursive;
+}
+
+.navbar-brand span {
+  color: #c5243a;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-size: 1.6rem;
+  letter-spacing: 0.07rem;
   display: block;
   padding: 0.5rem 1rem;
 }
 
 .nav-link:hover,
 .active {
-  color: red !important;
+  color: #c5243a !important;
 }
 
 .page-title {

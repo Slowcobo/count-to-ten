@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .Activity-preview {
@@ -9,5 +10,9 @@
   width: 250px;
   border-radius: 50%;
   background-color: white;
-  margin: 2rem;
+  margin: 1rem;
+}
+
+.Activity-link {
+  margin-bottom: 4rem;
 }

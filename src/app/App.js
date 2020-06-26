@@ -17,7 +17,10 @@ class App extends Component {
       <div className="App">
         <Container>
           <Navbar expand="sm">
-            <Navbar.Brand href="#home">Count to Ten</Navbar.Brand>
+            {/* TODO: Refactor to Link */}
+            <Navbar.Brand>
+              Count to <span>Ten</span>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">

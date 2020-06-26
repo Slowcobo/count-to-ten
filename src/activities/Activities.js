@@ -1,17 +1,23 @@
 import React, { Component } from "react";
 import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import "./Activities.css";
 
 class Activities extends Component {
   render() {
     return (
       <div className="Activities">
-        <Image className="Activity-preview" src="" fluid />
-        <Button>Meet the Characters</Button>
+        {/* Meet Characters */}
+        <Image className="Activity-preview" src="" />
+        <Link to="/" className="Activity-link">
+          Meet the Characters
+        </Link>
 
-        <Image className="Activity-preview" src="" fluid />
-        <Button>Play the Game</Button>
+        {/* Play Game */}
+        <Image className="Activity-preview" src="" />
+        <Link to="/play" className="Activity-link">
+          Play the Game
+        </Link>
       </div>
     );
   }

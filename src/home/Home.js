@@ -15,16 +15,14 @@ class Content extends Component {
         {/* Header */}
         <header className="Home-header">
           <Container>
-            <Row>
-              <Col sm={6} className="zowen-img-container">
+            <Row className="justify-content-center">
+              <Col md={4} lg={3} className="zowen-img-container ">
                 <Image className="zowen-img" src={zowen} />
               </Col>
-              <Col sm={6} className="title-container">
-                <div className="title">
-                  <h1>
-                    And <p>Zowen</p> Makes 10!
-                  </h1>
-                </div>
+              <Col md={7} lg={5} className="title-container">
+                <h1 className="title">
+                  And <p>Zowen</p> Makes 10!
+                </h1>
               </Col>
             </Row>
           </Container>
@@ -34,14 +32,14 @@ class Content extends Component {
         <main className="Home-content">
           <Container>
             <Row>
-              {/* Book Showcase */}
-              <Col sm={6}>
-                <Showcase />
-              </Col>
-
               <Col sm={6}>
                 {/* Activities */}
                 <Activities />
+              </Col>
+
+              {/* Book Showcase */}
+              <Col xs={{ order: "first" }} sm={{ span: 6, order: "last" }}>
+                <Showcase />
               </Col>
             </Row>
           </Container>

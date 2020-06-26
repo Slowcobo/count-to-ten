@@ -3,6 +3,7 @@
 }
 
 .Home-header {
+  margin-bottom: 9rem;
 }
 
 .Home-content::before {
@@ -10,7 +11,7 @@
   background-repeat: repeat-x;
   content: "";
   position: absolute;
-  margin-top: -415px;
+  margin-top: -315px;
   height: 415px;
   width: 100%;
   z-index: -1;
@@ -20,9 +21,9 @@
   background-color: #80bbdc;
   background-image: url("./zowen-characters.png");
   background-position: bottom center;
-  background-size: auto 600px;
+  background-size: auto 800px;
   background-repeat: repeat-x;
-  padding-bottom: 30rem;
+  padding-bottom: 37rem;
 }
 
 .Home-footer {
@@ -40,24 +41,23 @@
 }
 
 .title {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 5rem;
   animation: pop 0.5s;
   text-align: center;
-}
-
-.title h1 {
-  color: #000;
-  font-size: 4rem;
+  font-family: "Londrina Solid", cursive;
+  text-shadow: 0 5px 3px rgba(0, 0, 0, 0.15);
 }
 
 .title p {
   color: #c5243a;
-  font-size: 5.5rem;
-  font-family: "Bowlby One SC", cursive;
-  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.8);
+  font-size: 7.5rem;
+  margin: -15px;
+  margin-top: -30px;
 }
 
 .zowen-img {
-  height: 400px;
+  height: 390px;
 }
 
 .zowen-img-container {
