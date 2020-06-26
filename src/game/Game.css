@@ -1,9 +1,29 @@
+.Game-content::before {
+  background-image: url("./separator-game.png");
+  background-repeat: repeat-x;
+  content: "";
+  position: absolute;
+  margin-top: -315px;
+  height: 415px;
+  width: 100%;
+  z-index: -1;
+}
+
+.Game-content {
+  background-color: #80bbdc;
+  margin-top: 155px;
+  background-position: bottom center;
+  background-size: auto 800px;
+  background-repeat: repeat-x;
+  padding-bottom: 37rem;
+}
+
 .Game-container {
-  border: 1.5rem solid #6c3740;
+  border: 1rem solid #6c3740;
   background-image: linear-gradient(#608c7b, #347369);
-  max-width: 600px;
-  min-height: 400px;
-  margin: auto;
+  width: 85%;
+  height: fit-content;
+  min-height: 248px;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -13,7 +33,13 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  min-height: 400px;
+}
+
+.Game-description {
+  text-align: center;
+  margin: 4rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
 }
 
 .try-again {
@@ -41,7 +67,7 @@
 .beverly-img {
   position: absolute;
   z-index: 10;
-  max-height: 500px;
-  left: 70%;
-  top: 4rem;
+  max-height: 100%;
+  left: 74%;
+  top: 6rem;
 }

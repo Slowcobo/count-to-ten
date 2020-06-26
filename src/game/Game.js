@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -14,6 +15,7 @@ class Game extends Component {
       numbers: this.randomizeOrder(),
       prevNumber: 0,
       tryAgain: false,
+      isWinner: false,
     };
 
     this.randomizeOrder = this.randomizeOrder.bind(this);
@@ -88,17 +90,35 @@ class Game extends Component {
     //Handle game ending
     return (
       <div>
-        <Row>
-          <h1 className="page-title">Count to Ten</h1>
-        </Row>
-        <Row>
-          <Col>
-            <Image className="beverly-img" src={beverly} />
-            <div className="Game-container">
-              {this.state.prevNumber === 10 ? gameOver : game}
-            </div>
-          </Col>
-        </Row>
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="page-header">
+                Count to <span>Ten</span>
+              </h1>
+            </Col>
+          </Row>
+        </Container>
+
+        <div className="Game-content">
+          <Container>
+            <Row>
+              <Col className="Game-description">
+                Miss Beverly has written some numbers down on the board. See if
+                you can count them!
+              </Col>
+            </Row>
+            <Row className="justify-content-center">
+              <Col md={7}>
+                <Image className="beverly-img" src={beverly} />
+
+                <div className="Game-container">
+                  {this.state.prevNumber === 10 ? gameOver : game}
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     );
   }

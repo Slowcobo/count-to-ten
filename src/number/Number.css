@@ -1,6 +1,6 @@
 .Number {
-  font-size: 4rem;
-  width: 30%;
+  font-size: 4vmax;
+  width: 33.33%;
   text-shadow: 0.1rem 0.1rem black;
 }
 
