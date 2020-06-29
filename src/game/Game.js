@@ -104,12 +104,12 @@ class Game extends Component {
           <Container>
             <Row>
               <Col className="Game-description">
-                Miss Beverly has written some numbers down on the board. See if
-                you can count them!
+                <p>Miss Beverly has written some numbers down on the board.</p>
+                <p>See if you can count them from 1 to 10!</p>
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col md={7}>
+              <Col lg={8}>
                 <Image className="beverly-img" src={beverly} />
 
                 <div className="Game-container">
