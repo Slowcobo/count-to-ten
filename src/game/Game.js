@@ -28,7 +28,7 @@ class Game extends Component {
 
     while (numbers.length < 10) {
       const random = Math.floor(Math.random() * 10) + 1;
-      if (numbers.filter((number) => number.value === random).length === 0) {
+      if (!numbers.some((number) => number.value === random)) {
         const newNumber = {
           value: random,
           isActive: true,
@@ -80,13 +80,13 @@ class Game extends Component {
       <div className="Game">
         {/* Winner Pop-up */}
         <div className={`winner ${this.state.isWinner && "show"}`}>
-          <p>You did it!</p>
+          You did it!
           <button onClick={this.newGame}>Play Again?</button>
         </div>
 
         {/* Try Again Pop-up */}
         <div className={`try-again ${this.state.tryAgain && "show"}`}>
-          <p>Try Again!</p>
+          Try Again!
         </div>
 
         {/* Game */}
@@ -102,7 +102,7 @@ class Game extends Component {
     );
 
     return (
-      <div>
+      <div className="mt-5">
         <Container>
           <Row>
             <Col>
