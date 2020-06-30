@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import zowenmakes10 from "./zowenmakes10.png";
-import Button from "react-bootstrap/Button";
 import "./Showcase.css";
 
 class Showcase extends Component {
@@ -13,7 +13,7 @@ class Showcase extends Component {
           And Zowen Makes 10! is a delightful book that children will love to
           read over and over again!
         </p>
-        <Button className="Showcase-buy">Buy the Book</Button>
+        <Link to="/">Buy the Book</Link>
       </div>
     );
   }

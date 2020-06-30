@@ -13,6 +13,18 @@
   margin: 1rem;
 }
 
-.Activity-link {
-  margin-bottom: 4rem;
+.game-preview {
+  border: 1rem solid #6c3740;
+  background-color: #347369;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.game-preview-number {
+  font-size: 7rem;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
+  font-family: "Love Ya Like A Sister", cursive;
 }

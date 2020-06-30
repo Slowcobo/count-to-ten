@@ -26,6 +26,20 @@
   padding-bottom: 37rem;
 }
 
+.Home a {
+  color: #fff;
+  background-color: #347369;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+}
+.Home a:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+  /* background-color:; */
+}
+
 .Home-footer {
   background-color: #d3c5c6;
   color: rgba(0, 0, 0, 0.5);

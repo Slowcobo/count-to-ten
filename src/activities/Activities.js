@@ -9,15 +9,22 @@ class Activities extends Component {
       <div className="Activities">
         {/* Meet Characters */}
         <Image className="Activity-preview" src="" />
-        <Link to="/" className="Activity-link">
-          Meet the Characters
-        </Link>
+        <Link to="/">Meet the Characters</Link>
 
         {/* Play Game */}
-        <Image className="Activity-preview" src="" />
-        <Link to="/play" className="Activity-link">
-          Play the Game
-        </Link>
+        <div className="Activity-preview">
+          <div className="game-preview">
+            <span className="game-preview-number">1</span>
+            <span
+              className="game-preview-number"
+              style={{ transform: "translate(0, -1rem)" }}
+            >
+              2
+            </span>
+            <span className="game-preview-number">3</span>
+          </div>
+        </div>
+        <Link to="/play">Play the Game</Link>
       </div>
     );
   }
