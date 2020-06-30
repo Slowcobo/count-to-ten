@@ -25,17 +25,22 @@ class Game extends Component {
 
   randomizeOrder() {
     const numbers = [];
+
     while (numbers.length < 10) {
       const random = Math.floor(Math.random() * 10) + 1;
-      if (!numbers.includes(random)) {
-        numbers.push(random);
+      if (numbers.filter((number) => number.value === random).length === 0) {
+        const newNumber = {
+          value: random,
+          isActive: true,
+        };
+        numbers.push(newNumber);
       }
     }
     return numbers;
   }
 
-  clickNumber(number) {
-    if (number.props.number - this.state.prevNumber !== 1) {
+  clickNumber(clickedNumber) {
+    if (clickedNumber - this.state.prevNumber !== 1) {
       this.setState(
         {
           tryAgain: true,
@@ -49,12 +54,15 @@ class Game extends Component {
     } else {
       //Update the previous number
       this.setState({
-        prevNumber: number.props.number,
+        numbers: this.state.numbers.map((number) =>
+          number.value === clickedNumber
+            ? { value: clickedNumber, isActive: false }
+            : number
+        ),
+        prevNumber: clickedNumber,
+        isWinner: clickedNumber === 10 && true,
       });
       //Disable the number component
-      number.setState({
-        isActive: false,
-      });
     }
   }
 
@@ -63,31 +71,36 @@ class Game extends Component {
       numbers: this.randomizeOrder(),
       prevNumber: 0,
       tryAgain: false,
+      isWinner: false,
     });
   }
 
   render() {
     const game = (
       <div className="Game">
-        <div className={`try-again ${this.state.tryAgain && "show"}`}>
-          <h1>Try Again!</h1>
+        {/* Winner Pop-up */}
+        <div className={`winner ${this.state.isWinner && "show"}`}>
+          <p>You did it!</p>
+          <button onClick={this.newGame}>Play Again?</button>
         </div>
+
+        {/* Try Again Pop-up */}
+        <div className={`try-again ${this.state.tryAgain && "show"}`}>
+          <p>Try Again!</p>
+        </div>
+
+        {/* Game */}
         {this.state.numbers.map((number) => (
-          <Number key={number} number={number} clickNumber={this.clickNumber} />
+          <Number
+            key={number.value}
+            value={number.value}
+            isActive={number.isActive}
+            handleClick={() => this.clickNumber(number.value)}
+          />
         ))}
       </div>
     );
 
-    const gameOver = (
-      <div className="Game">
-        <div className="winner">
-          <h1>You did it!</h1>
-          <button onClick={this.newGame}>Play Again?</button>
-        </div>
-      </div>
-    );
-
-    //Handle game ending
     return (
       <div>
         <Container>
@@ -109,12 +122,9 @@ class Game extends Component {
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col className="" lg={8}>
+              <Col lg={8}>
                 <Image className="beverly-img" src={beverly} />
-
-                <div className="Game-container">
-                  {this.state.prevNumber === 10 ? gameOver : game}
-                </div>
+                <div className="Game-container">{game}</div>
               </Col>
             </Row>
           </Container>
