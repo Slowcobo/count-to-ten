@@ -1,1 +1,1 @@
-This a simple counting application used for "And Zowen Makes 10!".
+A simple counting game and promotional website for "And Zowen Makes 10!".

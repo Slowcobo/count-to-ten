@@ -24,7 +24,7 @@ class About extends Component {
           <Container>
             <Row>
               <Col sm={12} md={4}>
-                <Image className="About-img" src={profile} />
+                <Image className="About-img" src={profile} fluid />
               </Col>
               <Col>
                 <p>

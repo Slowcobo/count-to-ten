@@ -109,7 +109,7 @@ class Game extends Component {
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col lg={8}>
+              <Col className="" lg={8}>
                 <Image className="beverly-img" src={beverly} />
 
                 <div className="Game-container">

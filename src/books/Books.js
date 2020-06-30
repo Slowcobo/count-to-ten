@@ -24,7 +24,7 @@ class Books extends Component {
           <Container>
             <Row>
               <Col md={4}>
-                <Image className="Book-img" src={zowenmakes10} />
+                <Image className="Book-img" src={zowenmakes10} fluid />
               </Col>
               <Col>
                 <div>
