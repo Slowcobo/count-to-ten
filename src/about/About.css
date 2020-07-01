@@ -22,3 +22,7 @@
 .About-text {
   margin: 2rem 0;
 }
+
+.About-img {
+  border-radius: 50%;
+}

@@ -23,8 +23,11 @@ class About extends Component {
         <div className="About-content">
           <Container>
             <Row>
-              <Col sm={12} md={4}>
-                <Image className="About-img " src={profile} fluid />
+              <Col className="text-center" sm={12} md={4}>
+                <Image className="About-img" src={profile} fluid />
+                <a className="button" href="mailto:joan@counttoten.com">
+                  Email Me!
+                </a>
               </Col>
               <Col className="About-text">
                 <p>
