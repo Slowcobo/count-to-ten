@@ -1,3 +1,24 @@
-.About-img {
-  margin-bottom: 1rem;
+.About-content::before {
+  background-image: url("./separator.png");
+  background-repeat: repeat-x;
+  content: "";
+  position: absolute;
+  margin-top: -315px;
+  height: 415px;
+  width: 100%;
+  z-index: -1;
+}
+
+.About-content {
+  background-color: #80bbdc;
+  margin-top: 155px;
+  background-position: bottom center;
+  background-size: auto 800px;
+  background-repeat: repeat-x;
+  padding-bottom: 37rem;
+}
+
+.About-img,
+.About-text {
+  margin-top: 2rem;
 }

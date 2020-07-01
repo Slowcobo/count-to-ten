@@ -17,12 +17,12 @@ class Content extends Component {
           <Container>
             <Row className="justify-content-center">
               <Col md={4} lg={3} className="zowen-img-container ">
-                <Image className="zowen-img" src={zowen} />
+                <Image className="zowen-img mb-3" src={zowen} />
               </Col>
               <Col md={7} lg={5} className="title-container">
-                <h1 className="title">
+                <div className="page-header">
                   And <p>Zowen</p> Makes 10!
-                </h1>
+                </div>
               </Col>
             </Row>
           </Container>
@@ -32,13 +32,13 @@ class Content extends Component {
         <main className="Home-content">
           <Container>
             <Row>
-              <Col sm={6}>
+              <Col md={6}>
                 {/* Activities */}
                 <Activities />
               </Col>
 
               {/* Book Showcase */}
-              <Col xs={{ order: "first" }} sm={{ span: 6, order: "last" }}>
+              <Col xs={{ order: "first" }} md={{ span: 6, order: "last" }}>
                 <Showcase />
               </Col>
             </Row>

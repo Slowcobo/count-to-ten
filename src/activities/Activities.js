@@ -21,7 +21,12 @@ class Activities extends Component {
             >
               2
             </span>
-            <span className="game-preview-number">3</span>
+            <span
+              className="game-preview-number"
+              style={{ transform: "translate(0, 1rem)" }}
+            >
+              3
+            </span>
           </div>
         </div>
         <Link to="/play">Play the Game</Link>

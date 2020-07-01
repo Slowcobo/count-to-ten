@@ -1,8 +1,6 @@
 body {
   color: #fff;
   background-color: #f3f3f3;
-  font-size: 20px;
-  font-family: "Patrick Hand", cursive;
 }
 
 button:focus {
@@ -11,6 +9,9 @@ button:focus {
 
 .App {
   overflow: hidden;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  font-family: "Chelsea Market", cursive;
 }
 
 .navbar {
@@ -24,7 +25,7 @@ button:focus {
 
 .navbar-brand {
   color: rgba(0, 0, 0, 0.7) !important;
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-family: "Londrina Solid", cursive;
 }
 
@@ -43,6 +44,22 @@ button:focus {
 .nav-link:hover,
 .active {
   color: #c5243a !important;
+}
+
+.page-header {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 6.5rem;
+  animation: pop 0.5s;
+  text-align: center;
+  font-family: "Londrina Solid", cursive;
+  text-shadow: 0 5px 3px rgba(0, 0, 0, 0.15);
+  line-height: 0.9;
+}
+
+.page-header span,
+.page-header p {
+  color: #c5243a;
+  line-height: 0.9;
 }
 
 .page-title {

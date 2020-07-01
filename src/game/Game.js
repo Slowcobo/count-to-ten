@@ -76,31 +76,6 @@ class Game extends Component {
   }
 
   render() {
-    const game = (
-      <div className="Game">
-        {/* Winner Pop-up */}
-        <div className={`winner ${this.state.isWinner && "show"}`}>
-          You did it!
-          <button onClick={this.newGame}>Play Again?</button>
-        </div>
-
-        {/* Try Again Pop-up */}
-        <div className={`try-again ${this.state.tryAgain && "show"}`}>
-          Try Again!
-        </div>
-
-        {/* Game */}
-        {this.state.numbers.map((number) => (
-          <Number
-            key={number.value}
-            value={number.value}
-            isActive={number.isActive}
-            handleClick={() => this.clickNumber(number.value)}
-          />
-        ))}
-      </div>
-    );
-
     return (
       <div className="mt-5">
         <Container>
@@ -124,7 +99,33 @@ class Game extends Component {
             <Row className="justify-content-center">
               <Col lg={8}>
                 <Image className="beverly-img" src={beverly} />
-                <div className="Game-container">{game}</div>
+                <div className="Game-container">
+                  <div className="Game">
+                    {/* Winner Pop-up */}
+                    <div className={`winner ${this.state.isWinner && "show"}`}>
+                      <p>You did it!</p>
+
+                      <button onClick={this.newGame}>Play Again?</button>
+                    </div>
+
+                    {/* Try Again Pop-up */}
+                    <div
+                      className={`try-again ${this.state.tryAgain && "show"}`}
+                    >
+                      Try Again!
+                    </div>
+
+                    {/* Game */}
+                    {this.state.numbers.map((number) => (
+                      <Number
+                        key={number.value}
+                        value={number.value}
+                        isActive={number.isActive}
+                        handleClick={() => this.clickNumber(number.value)}
+                      />
+                    ))}
+                  </div>
+                </div>
               </Col>
             </Row>
           </Container>

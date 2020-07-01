@@ -9,13 +9,13 @@ import "./About.css";
 class About extends Component {
   render() {
     return (
-      <div>
+      <div className="mt-5">
         <Container>
           <Row>
             <Col>
-              <h1 className="page-header">
+              <div className="page-header">
                 About <span>Joan</span>
-              </h1>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -24,9 +24,9 @@ class About extends Component {
           <Container>
             <Row>
               <Col sm={12} md={4}>
-                <Image className="About-img" src={profile} fluid />
+                <Image className="About-img " src={profile} fluid />
               </Col>
-              <Col>
+              <Col className="About-text">
                 <p>
                   Joan Parnell is an Early Childhood Educator and the lead
                   Pre-Kindergarten teacher at Lakeside Baptist Church in

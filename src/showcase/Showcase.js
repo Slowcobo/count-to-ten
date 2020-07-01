@@ -9,10 +9,6 @@ class Showcase extends Component {
     return (
       <div className="Showcase">
         <Image className="Showcase-book" src={zowenmakes10} />
-        <p className="Showcase-description">
-          And Zowen Makes 10! is a delightful book that children will love to
-          read over and over again!
-        </p>
         <Link to="/">Buy the Book</Link>
       </div>
     );

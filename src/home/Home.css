@@ -28,13 +28,14 @@
 
 .Home a {
   color: #fff;
-  background-color: #347369;
+  font-size: 1.2rem;
+  background-color: #eb6979;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .Home a:hover {
-  color: #fff;
   text-decoration: none;
   transform: scale(1.05);
   /* background-color:; */
