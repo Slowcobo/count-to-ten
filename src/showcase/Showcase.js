@@ -9,7 +9,9 @@ class Showcase extends Component {
     return (
       <div className="Showcase">
         <Image className="Showcase-book" src={zowenmakes10} />
-        <Link to="/">Buy the Book</Link>
+        <Link className="button" to="/">
+          Buy the Book
+        </Link>
       </div>
     );
   }

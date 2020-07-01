@@ -1,1 +1,36 @@
+.Books-content::before {
+  background-image: url("./separator-alt.png");
+  background-repeat: repeat-x;
+  content: "";
+  position: absolute;
+  margin-top: -315px;
+  height: 415px;
+  width: 100%;
+  z-index: -1;
+}
 
+.Books-content {
+  background-color: #80bbdc;
+  margin-top: 155px;
+  background-position: bottom center;
+  background-size: auto 800px;
+  background-repeat: repeat-x;
+  padding-bottom: 37rem;
+}
+
+.Book-img,
+.Book-title {
+  margin: 2rem 0;
+}
+
+.Book-img {
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.5);
+}
+
+.Book-title {
+  color: #1c597c;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  font-family: "Londrina Solid", cursive;
+}

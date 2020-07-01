@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
 import zowenmakes10 from "./zowenmakes10.png";
 import "./Books.css";
 
@@ -14,7 +14,7 @@ class Books extends Component {
         <Container>
           <Row>
             <Col>
-              <h1 className="page-header">
+              <h1 className="page-header mt-5">
                 The <span>Books</span>
               </h1>
             </Col>
@@ -27,8 +27,8 @@ class Books extends Component {
                 <Image className="Book-img" src={zowenmakes10} fluid />
               </Col>
               <Col>
-                <div>
-                  <h4 className="Book-title">And Zowen Makes 10!</h4>
+                <div className="Book-title">And Zowen Makes 10!</div>
+                <div className="Book-description">
                   <p>
                     The day has finally arrived. It’s the class field trip to
                     the Zoo. The children are so excited to see all the animals,
@@ -43,7 +43,9 @@ class Books extends Component {
                     discover that Zowen is missing! Where could he be?
                   </p>
                 </div>
-                <Button>Buy the Book</Button>
+                <Link className="button" to="/">
+                  Buy the Book
+                </Link>
               </Col>
             </Row>
           </Container>

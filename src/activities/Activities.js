@@ -9,7 +9,9 @@ class Activities extends Component {
       <div className="Activities">
         {/* Meet Characters */}
         <Image className="Activity-preview" src="" />
-        <Link to="/">Meet the Characters</Link>
+        <Link className="button" to="/">
+          Meet the Characters
+        </Link>
 
         {/* Play Game */}
         <div className="Activity-preview">
@@ -29,7 +31,9 @@ class Activities extends Component {
             </span>
           </div>
         </div>
-        <Link to="/play">Play the Game</Link>
+        <Link className="button" to="/play">
+          Play the Game
+        </Link>
       </div>
     );
   }

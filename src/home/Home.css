@@ -26,21 +26,6 @@
   padding-bottom: 37rem;
 }
 
-.Home a {
-  color: #fff;
-  font-size: 1.2rem;
-  background-color: #eb6979;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.Home a:hover {
-  text-decoration: none;
-  transform: scale(1.05);
-  /* background-color:; */
-}
-
 .Home-footer {
   background-color: #d3c5c6;
   color: rgba(0, 0, 0, 0.5);
