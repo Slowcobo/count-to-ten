@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Number from "../number/Number";
+import Footer from "../footer/Footer";
 import beverly from "./zowen-beverly.png";
 import "./Game.css";
 
@@ -130,11 +131,7 @@ class Game extends Component {
             </Row>
           </Container>
           <div className="Game-footer">
-            <Container>
-              <Row className="justify-content-center">
-                <Col>Copyright © 2020 by Joan Parnell</Col>
-              </Row>
-            </Container>
+            <Footer />
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import zowen from "./zowen.png";
 import Showcase from "../showcase/Showcase";
 import Activities from "../activities/Activities";
+import Footer from "../footer/Footer";
 import "./Home.css";
 
 class Content extends Component {
@@ -47,11 +48,7 @@ class Content extends Component {
 
         {/* Footer */}
         <div className="Home-footer">
-          <Container>
-            <Row className="justify-content-center">
-              <Col>Copyright © 2020 by Joan Parnell</Col>
-            </Row>
-          </Container>
+          <Footer />
         </div>
       </div>
     );
