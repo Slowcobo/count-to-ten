@@ -19,18 +19,20 @@
 }
 
 .Game-container {
-  border: 1rem solid #6c3740;
-  background-color: #347369;
-  width: 85%;
-  min-height: 248px;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
 }
 
 .Game {
   font-size: 5vmax;
+  border: 1rem solid #6c3740;
+  background-color: #347369;
+  min-height: 248px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
   text-align: center;
   display: flex;
+  width: 85%;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -81,8 +83,8 @@
   position: absolute;
   z-index: 20;
   max-height: 100%;
-  left: 74%;
-  top: 6rem;
+  left: 80%;
+  top: 8rem;
 }
 
 @media (min-width: 576px) {

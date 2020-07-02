@@ -17,6 +17,9 @@ button:focus {
   border-radius: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  outline: none;
+  border: 0px;
+  cursor: pointer;
 }
 
 .button:hover {

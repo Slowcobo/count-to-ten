@@ -8,6 +8,18 @@ import zowenmakes10 from "./zowenmakes10.png";
 import "./Books.css";
 
 class Books extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showLinks: false,
+    };
+    this.toggleLinks = this.toggleLinks.bind(this);
+  }
+  toggleLinks() {
+    this.setState({
+      showLinks: !this.state.showLinks,
+    });
+  }
   render() {
     return (
       <div>
@@ -43,9 +55,21 @@ class Books extends Component {
                     discover that Zowen is missing! Where could he be?
                   </p>
                 </div>
-                <Link className="button" to="/">
-                  Buy the Book
-                </Link>
+                <button className="button" onClick={this.toggleLinks}>
+                  Buy the Book <i className="fas fa-chevron-down"></i>
+                </button>
+                <ul className={`Book-links ${this.state.showLinks && "show"}`}>
+                  <li>
+                    <a href="https://www.amazon.com/dp/1098017986/ref=cm_sw_em_r_mt_dp_U_nZJ.Eb37WSYSG">
+                      Buy on <i className="fab fa-amazon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.barnesandnoble.com/w/and-zowen-makes-10-joan-parnell/1137274180?ean=9781098017989">
+                      Buy on Barnes & Noble
+                    </a>
+                  </li>
+                </ul>
               </Col>
             </Row>
           </Container>
