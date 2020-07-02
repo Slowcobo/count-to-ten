@@ -63,7 +63,7 @@
   text-shadow: none;
 }
 
-.show {
+.show-links {
   opacity: 1;
   transform: translateY(20px);
   transition: transform 0.2s ease-in-out;
