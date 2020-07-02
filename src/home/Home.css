@@ -28,6 +28,8 @@
 
 .Home-footer {
   background-color: #d3c5c6;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1.2rem !important;
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
   padding: 1rem;
