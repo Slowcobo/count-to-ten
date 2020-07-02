@@ -11,11 +11,7 @@
 
 .Game-content {
   background-color: #80bbdc;
-  margin-top: 155px;
-  background-position: bottom center;
-  background-size: auto 800px;
-  background-repeat: repeat-x;
-  padding-bottom: 37rem;
+  margin-top: 1rem;
 }
 
 .Game-container {
@@ -90,5 +86,73 @@
 @media (min-width: 576px) {
   .Game-description {
     margin: 4rem;
+  }
+}
+
+.Game-footer::before {
+  background-image: url("./zowen-charts.png");
+  background-repeat: repeat-x;
+  content: "";
+  background-size: auto 11.5rem;
+  position: absolute;
+  margin-top: -11.5rem;
+  height: 12rem;
+  width: 100%;
+}
+
+.Game-footer {
+  margin-top: 23rem;
+  background-color: #f3f3f3;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .Game-footer::before {
+    background-size: auto 11.5rem;
+    margin-top: -11.5rem;
+    height: 12rem;
+  }
+  .Game-footer {
+    margin-top: 25rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Game-footer::before {
+    background-size: auto 12.5rem;
+    margin-top: -12.5rem;
+    height: 12.5rem;
+  }
+  .Game-footer {
+    margin-top: 24rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Game-footer::before {
+    background-size: auto 15.5rem;
+    margin-top: -15.5rem;
+    height: 15.5rem;
+  }
+  .Game-footer {
+    margin-top: 29rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Game-footer::before {
+    background-size: auto 19.5rem;
+    margin-top: -19.5rem;
+    height: 19.5rem;
+  }
+  .Game-footer {
+    margin-top: 35rem;
   }
 }

@@ -29,11 +29,9 @@
 .Home-footer {
   background-color: #d3c5c6;
   font-family: "Balsamiq Sans", cursive;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
-  font-size: 0.9rem;
-  padding: 1rem;
-  padding-left: 5rem;
+  padding: 1rem 0;
 }
 
 .title-container {

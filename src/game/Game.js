@@ -129,6 +129,13 @@ class Game extends Component {
               </Col>
             </Row>
           </Container>
+          <div className="Game-footer">
+            <Container>
+              <Row className="justify-content-center">
+                <Col>Copyright © 2020 by Joan Parnell</Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </div>
     );
