@@ -28,6 +28,7 @@ button:focus {
   outline: none;
   border: 0px;
   cursor: pointer;
+  z-index: 10;
 }
 
 .button:hover {

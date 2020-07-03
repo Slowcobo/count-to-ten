@@ -1,5 +1,19 @@
+.Home-footer::before {
+  background-image: url("./zowen-main.png");
+  background-color: #80bbdc;
+  background-repeat: repeat-x;
+  background-position: 43.25%;
+  background-size: auto 44rem;
+  content: "";
+  position: absolute;
+  margin-top: -43rem;
+  height: 44rem;
+  width: 100%;
+}
+
 .Home-footer {
-  background-color: #d3c5c6;
+  margin-top: 32rem;
+  background-color: #f3f3f3;
 }
 
 .title-container {
@@ -15,9 +29,7 @@
 }
 
 .zowen-img {
-  height: 390px;
-  /* margin-top: 5rem;
-  margin-bottom: 15rem; */
+  height: 300px;
 }
 
 @keyframes pop {
@@ -32,27 +44,53 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .Home-footer::before {
+    background-position: 39%;
+  }
   .zowen-img {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .zowen-img {
+    height: 300px;
     margin-top: 4rem;
     margin-bottom: 12rem;
+  }
+  .Home-footer::before {
+    background-position: 29%;
+    background-size: auto 49rem;
+    margin-top: -48rem;
+    height: 49rem;
+  }
+  .Home-footer {
+    margin-top: 35.5rem;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .zowen-img {
+    height: 350px;
     margin-top: 5rem;
     margin-bottom: 15rem;
+  }
+  .Home-footer::before {
+    background-position: 25%;
+    background-size: auto 49rem;
+    margin-top: -48rem;
+    height: 49rem;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .Home-footer::before {
+    background-position: center;
+  }
+  .Home-footer {
+    margin-top: 40rem;
+  }
 }

@@ -30,7 +30,7 @@ class Content extends Component {
         </header>
 
         {/* Main Content */}
-        <main className="Home content">
+        <main className="content">
           <Container>
             <Row>
               <Col md={6}>
