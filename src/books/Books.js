@@ -23,6 +23,7 @@ class Books extends Component {
   render() {
     return (
       <div>
+        {/* Header */}
         <Container>
           <Row>
             <Col>
@@ -32,7 +33,9 @@ class Books extends Component {
             </Col>
           </Row>
         </Container>
-        <div className="content">
+
+        {/* Main Content */}
+        <main className="content">
           <Container>
             <Row>
               <Col md={4}>
@@ -83,9 +86,11 @@ class Books extends Component {
               </Col>
             </Row>
           </Container>
-          <div className="Books-footer">
-            <Footer />
-          </div>
+        </main>
+
+        {/* Footer */}
+        <div className="Books-footer">
+          <Footer />
         </div>
       </div>
     );

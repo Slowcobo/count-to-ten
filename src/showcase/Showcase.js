@@ -1,20 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
 import zowenmakes10 from "./zowenmakes10.png";
 import "./Showcase.css";
 
-class Showcase extends Component {
-  render() {
-    return (
-      <div className="Showcase">
-        <Image className="Showcase-book" src={zowenmakes10} />
-        <Link className="button" to="/books">
-          See the Book
-        </Link>
-      </div>
-    );
-  }
+export default function Showcase() {
+  return (
+    <div className="Showcase">
+      <Image className="Showcase-book" src={zowenmakes10} />
+      <Link className="button" to="/books">
+        See the Book
+      </Link>
+    </div>
+  );
 }
-
-export default Showcase;

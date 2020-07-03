@@ -3,24 +3,27 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import Footer from "../footer/Footer";
 import profile from "./profile.png";
 import "./About.css";
 
 class About extends Component {
   render() {
     return (
-      <div className="mt-5">
+      <div>
+        {/* Header */}
         <Container>
           <Row>
             <Col>
-              <div className="page-header">
+              <header className="page-header">
                 About <span>Joan</span>
-              </div>
+              </header>
             </Col>
           </Row>
         </Container>
 
-        <div className="content">
+        {/* Main Content */}
+        <main className="content">
           <Container>
             <Row>
               <Col className="text-center" sm={12} md={4}>
@@ -53,7 +56,12 @@ class About extends Component {
               </Col>
             </Row>
           </Container>
-        </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="About-footer">
+          <Footer />
+        </footer>
       </div>
     );
   }

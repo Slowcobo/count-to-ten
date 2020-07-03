@@ -39,7 +39,7 @@ button:focus {
 
 /* Content Container */
 .content::before {
-  background-image: url("./separator4.png");
+  background-image: url("./separator.png");
   background-repeat: repeat-x;
   background-size: auto 4rem;
   content: "";

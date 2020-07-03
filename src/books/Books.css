@@ -7,6 +7,7 @@
 
 /* Footer */
 .Books-footer::before {
+  background-color: #80bbdc;
   background-image: url("./zowen-animals2.png");
   background-repeat: repeat-x;
   background-position: 30.25%;

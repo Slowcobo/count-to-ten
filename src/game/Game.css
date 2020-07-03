@@ -80,6 +80,7 @@
 
 /* Footer */
 .Game-footer::before {
+  background-color: #80bbdc;
   background-image: url("./zowen-charts.png");
   background-repeat: repeat-x;
   background-position: center;

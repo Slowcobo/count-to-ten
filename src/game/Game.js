@@ -80,6 +80,7 @@ class Game extends Component {
   render() {
     return (
       <div>
+        {/* Header */}
         <Container>
           <Row>
             <Col>
@@ -90,7 +91,8 @@ class Game extends Component {
           </Row>
         </Container>
 
-        <div className="content">
+        {/* Main Content */}
+        <main className="content">
           <Container>
             <Row>
               <Col className="Game-description">
@@ -132,10 +134,12 @@ class Game extends Component {
               </Col>
             </Row>
           </Container>
-          <div className="Game-footer">
-            <Footer />
-          </div>
-        </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="Game-footer">
+          <Footer />
+        </footer>
       </div>
     );
   }
