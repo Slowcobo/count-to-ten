@@ -9,7 +9,7 @@ class Activities extends Component {
       <div className="Activities">
         {/* Meet Characters */}
         <Image className="Activity-preview" src="" />
-        <Link className="button" to="/">
+        <Link className="button" to="/characters">
           Meet the Characters
         </Link>
 
