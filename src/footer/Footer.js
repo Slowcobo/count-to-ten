@@ -6,7 +6,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <Container className="Footer">
+    <Container className="Footer" fluid>
       <Row className="text-center">
         <Col>Copyright © 2020 by Joan Parnell</Col>
       </Row>

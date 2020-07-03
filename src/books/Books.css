@@ -1,3 +1,26 @@
+.available {
+  font-size: 3rem;
+  font-family: "Londrina Solid", cursive;
+  letter-spacing: 0.05rem;
+  color: #1c597c;
+}
+
+/* Footer */
+.Books-footer::before {
+  background-image: url("./zowen-animals2.png");
+  background-repeat: repeat-x;
+  background-position: 30.25%;
+  background-size: auto 20rem;
+  content: "";
+  position: absolute;
+  margin-top: -19rem;
+  height: 20rem;
+  width: 100%;
+}
+.Books-footer {
+  margin-top: 20.5rem;
+}
+
 /* Book Elements */
 .Book-img,
 .Book-title {
@@ -13,6 +36,7 @@
   font-size: 5rem;
   letter-spacing: 0.1rem;
   line-height: 1;
+  margin-bottom: 1rem;
   font-family: "Londrina Solid", cursive;
 }
 
@@ -27,11 +51,10 @@
 
 /* Toggled Book links */
 .Book-links {
-  opacity: 0;
-  margin-top: -40px;
   list-style: none;
   padding: 0;
   font-family: "Balsamiq Sans", cursive;
+  display: none;
 }
 
 .Book-links a {
@@ -46,7 +69,41 @@
 }
 
 .show-links {
-  opacity: 1;
-  transform: translateY(20px);
-  transition: transform 0.2s ease-in-out;
+  display: block;
+  transition: 1s ease-in-out;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Books-footer::before {
+  }
+  .Books-footer {
+    margin-top: 22.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Books-footer::before {
+    background-position: 40%;
+  }
+  .Books-footer {
+    margin-top: 21rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Books-footer::before {
+    background-size: auto 22rem;
+    margin-top: -22rem;
+    height: 22rem;
+  }
+  .Books-footer {
+    margin-top: 26rem;
+  }
 }

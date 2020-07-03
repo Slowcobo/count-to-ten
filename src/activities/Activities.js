@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 import characters from "./zowen-characters.png";
 import "./Activities.css";
@@ -9,7 +10,7 @@ class Activities extends Component {
       <div className="Activities">
         {/* Meet Characters */}
         <div className="Activity-preview">
-          <img className="character-preview" src={characters} />
+          <Image className="character-preview" src={characters} />
         </div>
         <Link className="button" to="/characters">
           Meet the Characters

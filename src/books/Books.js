@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import Footer from "../footer/Footer";
 import zowenmakes10 from "./zowenmakes10.png";
 import "./Books.css";
 
@@ -25,7 +26,7 @@ class Books extends Component {
         <Container>
           <Row>
             <Col>
-              <h1 className="page-header mt-5">
+              <h1 className="page-header">
                 The <span>Books</span>
               </h1>
             </Col>
@@ -43,9 +44,9 @@ class Books extends Component {
                   <p>
                     The day has finally arrived. It’s the class field trip to
                     the Zoo. The children are so excited to see all the animals,
-                    but Zowen has one thing on his mind. “Will there be
-                    something to eat?”
+                    but Zowen has one thing on his mind.
                   </p>
+                  <p>“Will there be something to eat?”</p>
                   <p>
                     Join Zowen and his classmates as they visit all the
                     fascinating animals at the zoo. Upon leaving the reptile
@@ -53,29 +54,38 @@ class Books extends Component {
                     “just to be sure.” Much to her dismay, she and the children
                     discover that Zowen is missing! Where could he be?
                   </p>
+                  <div className="text-center">
+                    <p className="available">Available Now!</p>
+                    <button
+                      className="button mb-2 mt-2 mx-auto"
+                      onClick={this.toggleLinks}
+                    >
+                      Buy the Book <i className="fas fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      className={`Book-links ${
+                        this.state.showLinks && "show-links"
+                      }`}
+                    >
+                      <li>
+                        <a href="https://www.amazon.com/dp/1098017986/ref=cm_sw_em_r_mt_dp_U_nZJ.Eb37WSYSG">
+                          Buy on <i className="fab fa-amazon"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.barnesandnoble.com/w/and-zowen-makes-10-joan-parnell/1137274180?ean=9781098017989">
+                          Buy on Barnes & Noble
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <button className="button " onClick={this.toggleLinks}>
-                  Buy the Book <i className="fas fa-chevron-down"></i>
-                </button>
-                <ul
-                  className={`Book-links ${
-                    this.state.showLinks && "show-links"
-                  }`}
-                >
-                  <li>
-                    <a href="https://www.amazon.com/dp/1098017986/ref=cm_sw_em_r_mt_dp_U_nZJ.Eb37WSYSG">
-                      Buy on <i className="fab fa-amazon"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.barnesandnoble.com/w/and-zowen-makes-10-joan-parnell/1137274180?ean=9781098017989">
-                      Buy on Barnes & Noble
-                    </a>
-                  </li>
-                </ul>
               </Col>
             </Row>
           </Container>
+          <div className="Books-footer">
+            <Footer />
+          </div>
         </div>
       </div>
     );
