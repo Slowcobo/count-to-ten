@@ -1,0 +1,20 @@
+.character-name {
+  color: #1c597c;
+  font-size: 5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  font-family: "Londrina Solid", cursive;
+}
+
+.character-image {
+  height: 300px;
+  max-width: 300px;
+}
+
+.character-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
