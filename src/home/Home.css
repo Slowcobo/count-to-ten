@@ -1,31 +1,3 @@
-.Home {
-  margin-top: 2rem;
-}
-
-.Home-header {
-  margin-bottom: 9rem;
-}
-
-.Home-content::before {
-  background-image: url("./separator.png");
-  background-repeat: repeat-x;
-  content: "";
-  position: absolute;
-  margin-top: -315px;
-  height: 415px;
-  width: 100%;
-  z-index: -1;
-}
-
-.Home-content {
-  background-color: #80bbdc;
-  background-image: url("./zowen-characters.png");
-  background-position: bottom center;
-  background-size: auto 800px;
-  background-repeat: repeat-x;
-  padding-bottom: 37rem;
-}
-
 .Home-footer {
   background-color: #d3c5c6;
 }
@@ -36,30 +8,16 @@
   justify-content: center;
 }
 
-.title {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 5rem;
-  animation: pop 0.5s;
-  text-align: center;
-  font-family: "Londrina Solid", cursive;
-  text-shadow: 0 5px 3px rgba(0, 0, 0, 0.15);
-}
-
-.title p {
-  color: #c5243a;
-  font-size: 7.5rem;
-  margin: -15px;
-  margin-top: -30px;
-}
-
-.zowen-img {
-  height: 390px;
-}
-
 .zowen-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.zowen-img {
+  height: 390px;
+  /* margin-top: 5rem;
+  margin-bottom: 15rem; */
 }
 
 @keyframes pop {
@@ -70,4 +28,31 @@
   100% {
     transform: scale(1);
   }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .zowen-img {
+    margin-top: 4rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .zowen-img {
+    margin-top: 4rem;
+    margin-bottom: 12rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .zowen-img {
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

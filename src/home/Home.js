@@ -18,9 +18,9 @@ class Content extends Component {
           <Container>
             <Row className="justify-content-center">
               <Col md={4} lg={3} className="zowen-img-container ">
-                <Image className="zowen-img mb-3" src={zowen} />
+                <Image className="zowen-img " src={zowen} />
               </Col>
-              <Col md={7} lg={5} className="title-container">
+              <Col md={7} lg={6} className="title-container">
                 <div className="page-header">
                   And <p>Zowen</p> Makes 10!
                 </div>
@@ -30,7 +30,7 @@ class Content extends Component {
         </header>
 
         {/* Main Content */}
-        <main className="Home-content">
+        <main className="Home content">
           <Container>
             <Row>
               <Col md={6}>
