@@ -1,17 +1,18 @@
 .Game-content::before {
-  background-image: url("./separator-alt.png");
+  background-image: url("./separator4.png");
   background-repeat: repeat-x;
+  background-size: auto 3rem;
+  background-position: center;
   content: "";
   position: absolute;
-  margin-top: -315px;
-  height: 415px;
+  margin-top: -3rem;
+  height: 3rem;
   width: 100%;
-  z-index: -1;
+  z-index: -10;
 }
 
 .Game-content {
   background-color: #80bbdc;
-  margin-top: 1rem;
 }
 
 .Game-container {
@@ -83,30 +84,30 @@
   top: 8rem;
 }
 
-@media (min-width: 576px) {
-  .Game-description {
-    margin: 4rem;
-  }
-}
-
 .Game-footer::before {
   background-image: url("./zowen-charts.png");
   background-repeat: repeat-x;
   content: "";
-  background-size: auto 11.5rem;
+  background-size: auto 10.5rem;
   position: absolute;
-  margin-top: -11.5rem;
-  height: 12rem;
+  margin-top: -9.5rem;
+  height: 9.5rem;
   width: 100%;
 }
 
 .Game-footer {
-  margin-top: 23rem;
+  margin-top: 19rem;
   background-color: #f3f3f3;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .Game-content::before {
+    background-size: auto 5rem;
+    background-position: top left;
+    margin-top: -5rem;
+    height: 5rem;
+  }
   .Game-footer::before {
     background-size: auto 11.5rem;
     margin-top: -11.5rem;
@@ -119,6 +120,14 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .Game-content::before {
+    background-size: auto 6rem;
+    margin-top: -6rem;
+    height: 6rem;
+  }
+  .Game-content::before {
+    background-position: top left;
+  }
   .Game-footer::before {
     background-size: auto 12.5rem;
     margin-top: -12.5rem;
@@ -131,6 +140,11 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .Game-content::before {
+    background-size: auto 8rem;
+    margin-top: -7.95rem;
+    height: 8rem;
+  }
   .Game-footer::before {
     background-size: auto 15.5rem;
     margin-top: -15.5rem;
@@ -143,6 +157,11 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .Game-content::before {
+    background-size: auto 10rem;
+    margin-top: -9.95rem;
+    height: 10rem;
+  }
   .Game-footer::before {
     background-size: auto 19.5rem;
     margin-top: -19.5rem;

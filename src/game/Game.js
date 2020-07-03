@@ -78,7 +78,7 @@ class Game extends Component {
 
   render() {
     return (
-      <div className="mt-5">
+      <div>
         <Container>
           <Row>
             <Col>
