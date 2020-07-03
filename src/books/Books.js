@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -58,7 +57,11 @@ class Books extends Component {
                 <button className="button " onClick={this.toggleLinks}>
                   Buy the Book <i className="fas fa-chevron-down"></i>
                 </button>
-                <ul className={`Book-links ${this.state.showLinks && "show-links"}`}>
+                <ul
+                  className={`Book-links ${
+                    this.state.showLinks && "show-links"
+                  }`}
+                >
                   <li>
                     <a href="https://www.amazon.com/dp/1098017986/ref=cm_sw_em_r_mt_dp_U_nZJ.Eb37WSYSG">
                       Buy on <i className="fab fa-amazon"></i>
