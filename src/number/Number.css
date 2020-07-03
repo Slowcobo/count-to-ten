@@ -1,8 +1,10 @@
 .Number {
+  font-size: 5vw;
   font-size: 5vmax;
   width: 33%;
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
   font-family: "Love Ya Like A Sister", cursive;
+  z-index: 20;
 }
 
 .Number:hover {

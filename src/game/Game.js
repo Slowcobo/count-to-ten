@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import Number from "../number/Number";
 import Footer from "../footer/Footer";
 import beverly from "./zowen-beverly.png";
+import zowenClass from "./zowen-class.png";
 import "./Game.css";
 
 class Game extends Component {
@@ -100,6 +101,7 @@ class Game extends Component {
             <Row className="justify-content-center">
               <Col lg={8}>
                 <Image className="beverly-img" src={beverly} />
+                <Image className="class-img" src={zowenClass} />
                 <div className="Game-container">
                   <div className="Game">
                     {/* Winner Pop-up */}
