@@ -1,26 +1,7 @@
-.Books-content::before {
-  background-image: url("./separator-alt.png");
-  background-repeat: repeat-x;
-  content: "";
-  position: absolute;
-  margin-top: -315px;
-  height: 415px;
-  width: 100%;
-  z-index: -1;
-}
-
-.Books-content {
-  background-color: #80bbdc;
-  margin-top: 155px;
-  background-position: bottom center;
-  background-size: auto 800px;
-  background-repeat: repeat-x;
-  padding-bottom: 37rem;
-}
-
+/* Book Elements */
 .Book-img,
 .Book-title {
-  margin: 2rem 0;
+  margin-top: 4rem;
 }
 
 .Book-img {
@@ -44,6 +25,7 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Toggled Book links */
 .Book-links {
   opacity: 0;
   margin-top: -40px;

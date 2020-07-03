@@ -20,7 +20,7 @@ class About extends Component {
           </Row>
         </Container>
 
-        <div className="About-content">
+        <div className="content">
           <Container>
             <Row>
               <Col className="text-center" sm={12} md={4}>

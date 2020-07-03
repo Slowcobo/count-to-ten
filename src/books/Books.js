@@ -32,7 +32,7 @@ class Books extends Component {
             </Col>
           </Row>
         </Container>
-        <div className="Books-content">
+        <div className="content">
           <Container>
             <Row>
               <Col md={4}>

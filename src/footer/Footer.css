@@ -1,6 +1,7 @@
 .Footer {
+  background-color: #f3f3f3;
+  color: rgba(0, 0, 0, 0.5);
   font-family: "Balsamiq Sans", cursive;
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.5);
   padding: 1rem 0;
 }
