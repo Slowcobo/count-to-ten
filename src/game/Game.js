@@ -90,7 +90,7 @@ class Game extends Component {
           </Row>
         </Container>
 
-        <div className="Game-content">
+        <div className="content">
           <Container>
             <Row>
               <Col className="Game-description">

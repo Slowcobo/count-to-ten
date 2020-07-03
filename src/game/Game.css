@@ -1,17 +1,8 @@
-.Game-content::before {
-  background-image: url("./separator4.png");
-  background-repeat: repeat-x;
-  background-size: auto 4rem;
-  content: "";
-  position: absolute;
-  margin-top: -4rem;
-  height: 4rem;
-  width: 100%;
-  z-index: -10;
-}
-
-.Game-content {
-  background-color: #80bbdc;
+/* Game Elements */
+.Game-description {
+  text-align: center;
+  margin: 2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .Game-container {
@@ -34,12 +25,7 @@
   font-family: "Love Ya Like A Sister", cursive;
 }
 
-.Game-description {
-  text-align: center;
-  margin: 2rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
+/* Game Pop-Ups */
 .try-again {
   position: absolute;
   font-size: 5vmax;
@@ -75,6 +61,7 @@
   z-index: 30;
 }
 
+/* Images */
 .beverly-img {
   position: absolute;
   z-index: 20;
@@ -91,6 +78,7 @@
   top: 9rem;
 }
 
+/* Footer */
 .Game-footer::before {
   background-image: url("./zowen-charts.png");
   background-repeat: repeat-x;
