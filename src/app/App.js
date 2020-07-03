@@ -9,6 +9,7 @@ import About from "../about/About";
 import Books from "../books/Books";
 import Game from "../game/Game";
 import Characters from "../characters/Characters";
+import Error from "../error/Error";
 import "./App.css";
 
 class App extends Component {
@@ -74,6 +75,7 @@ class App extends Component {
           <Route exact path="/characters" render={() => <Characters />} />
           <Route exact path="/books" render={() => <Books />} />
           <Route exact path="/play" render={() => <Game />} />
+          <Route render={() => <Error />} />
         </Switch>
       </div>
     );
