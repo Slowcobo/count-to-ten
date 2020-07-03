@@ -3,6 +3,11 @@
   font-family: "Londrina Solid", cursive;
   letter-spacing: 0.05rem;
   color: #1c597c;
+  text-shadow: none;
+}
+
+.Books-content {
+  padding-bottom: 23rem;
 }
 
 /* Footer */
@@ -17,9 +22,6 @@
   margin-top: -19rem;
   height: 20rem;
   width: 100%;
-}
-.Books-footer {
-  margin-top: 20.5rem;
 }
 
 /* Book Elements */
@@ -80,11 +82,6 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .Books-footer::before {
-  }
-  .Books-footer {
-    margin-top: 22.5rem;
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -92,19 +89,16 @@
   .Books-footer::before {
     background-position: 40%;
   }
-  .Books-footer {
-    margin-top: 21rem;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .Books-content {
+    padding-bottom: 27rem;
+  }
   .Books-footer::before {
     background-size: auto 22rem;
     margin-top: -22rem;
     height: 22rem;
-  }
-  .Books-footer {
-    margin-top: 26rem;
   }
 }

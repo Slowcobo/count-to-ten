@@ -35,7 +35,7 @@ class Books extends Component {
         </Container>
 
         {/* Main Content */}
-        <main className="content">
+        <main className="content Books-content">
           <Container>
             <Row>
               <Col md={4}>
@@ -71,12 +71,20 @@ class Books extends Component {
                       }`}
                     >
                       <li>
-                        <a href="https://www.amazon.com/dp/1098017986/ref=cm_sw_em_r_mt_dp_U_nZJ.Eb37WSYSG">
+                        <a
+                          href="https://www.amazon.com/dp/1098017986/ref=cm_sw_em_r_mt_dp_U_nZJ.Eb37WSYSG"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Buy on <i className="fab fa-amazon"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.barnesandnoble.com/w/and-zowen-makes-10-joan-parnell/1137274180?ean=9781098017989">
+                        <a
+                          href="https://www.barnesandnoble.com/w/and-zowen-makes-10-joan-parnell/1137274180?ean=9781098017989"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Buy on Barnes & Noble
                         </a>
                       </li>

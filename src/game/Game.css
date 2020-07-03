@@ -1,3 +1,7 @@
+.Game-content {
+  padding-bottom: 16rem;
+}
+
 /* Game Elements */
 .Game-description {
   text-align: center;
@@ -92,16 +96,18 @@
   width: 100%;
 }
 
-.Game-footer {
-  margin-top: 16.5rem;
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .Game-content {
+    padding-bottom: 17rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .Game-content {
+    padding-bottom: 19rem;
+  }
   .Game-description {
     margin-top: 2rem;
   }
@@ -110,13 +116,13 @@
     margin-top: -9.5rem;
     height: 12rem;
   }
-  .Game-footer {
-    margin-top: 18.5rem;
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .Game-content {
+    padding-bottom: 21rem;
+  }
   .Game-description {
     margin-top: 4rem;
   }
@@ -125,13 +131,13 @@
     margin-top: -12rem;
     height: 15rem;
   }
-  .Game-footer {
-    margin-top: 21rem;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .Game-content {
+    padding-bottom: 30rem;
+  }
   .class-img {
     left: -10%;
     top: 13rem;
@@ -140,8 +146,5 @@
     background-size: auto 20rem;
     margin-top: -17rem;
     height: 20rem;
-  }
-  .Game-footer {
-    margin-top: 27.5rem;
   }
 }

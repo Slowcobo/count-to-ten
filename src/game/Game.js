@@ -92,7 +92,7 @@ class Game extends Component {
         </Container>
 
         {/* Main Content */}
-        <main className="content">
+        <main className="content Game-content">
           <Container>
             <Row>
               <Col className="Game-description">
