@@ -1,12 +1,11 @@
 .Game-content::before {
   background-image: url("./separator4.png");
   background-repeat: repeat-x;
-  background-size: auto 3rem;
-  background-position: center;
+  background-size: auto 4rem;
   content: "";
   position: absolute;
-  margin-top: -3rem;
-  height: 3rem;
+  margin-top: -4rem;
+  height: 4rem;
   width: 100%;
   z-index: -10;
 }
@@ -87,16 +86,17 @@
 .Game-footer::before {
   background-image: url("./zowen-charts.png");
   background-repeat: repeat-x;
+  background-position: center;
   content: "";
-  background-size: auto 10.5rem;
+  background-size: auto 10rem;
   position: absolute;
-  margin-top: -9.5rem;
-  height: 9.5rem;
+  margin-top: -8rem;
+  height: 10rem;
   width: 100%;
 }
 
 .Game-footer {
-  margin-top: 19rem;
+  margin-top: 17.5rem;
   background-color: #f3f3f3;
 }
 
@@ -107,14 +107,6 @@
     background-position: top left;
     margin-top: -5rem;
     height: 5rem;
-  }
-  .Game-footer::before {
-    background-size: auto 11.5rem;
-    margin-top: -11.5rem;
-    height: 12rem;
-  }
-  .Game-footer {
-    margin-top: 25rem;
   }
 }
 
@@ -128,13 +120,16 @@
   .Game-content::before {
     background-position: top left;
   }
+  .Game-description {
+    margin-top: 2rem;
+  }
   .Game-footer::before {
-    background-size: auto 12.5rem;
-    margin-top: -12.5rem;
-    height: 12.5rem;
+    background-size: auto 12rem;
+    margin-top: -9.5rem;
+    height: 12rem;
   }
   .Game-footer {
-    margin-top: 24rem;
+    margin-top: 19rem;
   }
 }
 
@@ -145,13 +140,16 @@
     margin-top: -7.95rem;
     height: 8rem;
   }
+  .Game-description {
+    margin-top: 4rem;
+  }
   .Game-footer::before {
-    background-size: auto 15.5rem;
-    margin-top: -15.5rem;
-    height: 15.5rem;
+    background-size: auto 15rem;
+    margin-top: -12rem;
+    height: 15rem;
   }
   .Game-footer {
-    margin-top: 29rem;
+    margin-top: 23rem;
   }
 }
 
@@ -163,11 +161,11 @@
     height: 10rem;
   }
   .Game-footer::before {
-    background-size: auto 19.5rem;
-    margin-top: -19.5rem;
-    height: 19.5rem;
+    background-size: auto 20rem;
+    margin-top: -17rem;
+    height: 20rem;
   }
   .Game-footer {
-    margin-top: 35rem;
+    margin-top: 28rem;
   }
 }
