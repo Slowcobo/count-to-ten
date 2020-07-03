@@ -8,6 +8,7 @@ import Home from "../home/Home";
 import About from "../about/About";
 import Books from "../books/Books";
 import Game from "../game/Game";
+import Characters from "../characters/Characters";
 import "./App.css";
 
 class App extends Component {
@@ -49,6 +50,14 @@ class App extends Component {
                 </NavLink>
                 <NavLink
                   exact
+                  to="/characters"
+                  className="nav-link"
+                  activeClassName="active"
+                >
+                  Characters
+                </NavLink>
+                <NavLink
+                  exact
                   to="/books"
                   className="nav-link"
                   activeClassName="active"
@@ -62,6 +71,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/characters" render={() => <Characters />} />
           <Route exact path="/books" render={() => <Books />} />
           <Route exact path="/play" render={() => <Game />} />
         </Switch>

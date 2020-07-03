@@ -21,7 +21,6 @@
 
 .Game {
   border: 1rem solid #6c3740;
-  font-size: 3rem;
   background-color: #347369;
   min-height: 248px;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
@@ -43,6 +42,7 @@
 
 .try-again {
   position: absolute;
+  font-size: 5vmax;
   background-color: #c5243a;
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
   opacity: 0;
@@ -54,7 +54,7 @@
 
 .winner {
   position: absolute;
-  font-size: 3rem;
+  font-size: 5vmax;
   opacity: 0;
   z-index: -10;
 }
@@ -64,7 +64,7 @@
   background-color: #c5243a;
   padding: 0 5%;
   border-radius: 1rem;
-  font-size: 2rem;
+  font-size: 3vmax;
   text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.7);
   border: none;
   cursor: pointer;
@@ -72,7 +72,7 @@
 
 .show {
   opacity: 1;
-  z-index: 10;
+  z-index: 30;
 }
 
 .beverly-img {
