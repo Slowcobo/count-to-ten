@@ -5,16 +5,16 @@
 }
 
 .Activity-preview {
-  background-color: #3072a8;
+  background-color: #f3f3f3;
   border-radius: 50%;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   z-index: 20;
 }
 
 .character-preview {
-  height: 250px;
-  width: auto;
+  width: 290px;
+  height: auto;
 }
 
 .game-preview {
