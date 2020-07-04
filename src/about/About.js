@@ -23,12 +23,12 @@ class About extends Component {
         </Container>
 
         {/* Main Content */}
-        <main className="content">
+        <main className="content About-content">
           <Container>
             <Row>
               <Col className="text-center" sm={12} md={4}>
                 <Image className="About-img" src={profile} fluid />
-                <a className="button" href="mailto:joan@counttoten.com">
+                <a className="button" href="mailto:contact@counttoten.com">
                   Email Me!
                 </a>
               </Col>

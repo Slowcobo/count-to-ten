@@ -43,14 +43,6 @@ class App extends Component {
                 </NavLink>
                 <NavLink
                   exact
-                  to="/about"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  About
-                </NavLink>
-                <NavLink
-                  exact
                   to="/characters"
                   className="nav-link"
                   activeClassName="active"
@@ -65,16 +57,24 @@ class App extends Component {
                 >
                   Books
                 </NavLink>
+                <NavLink
+                  exact
+                  to="/about"
+                  className="nav-link"
+                  activeClassName="active"
+                >
+                  About
+                </NavLink>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
         </Container>
         <Switch>
           <Route exact path="/" render={() => <Home />} />
-          <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/play" render={() => <Game />} />
           <Route exact path="/characters" render={() => <Characters />} />
           <Route exact path="/books" render={() => <Books />} />
-          <Route exact path="/play" render={() => <Game />} />
+          <Route exact path="/about" render={() => <About />} />
           <Route render={() => <Error />} />
         </Switch>
       </div>

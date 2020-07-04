@@ -24,7 +24,7 @@ class Characters extends Component {
         </Container>
 
         {/* Main Content */}
-        <main className="content">
+        <main className="content Characters-content">
           <Container>
             <Row>
               <Col md={6}>
