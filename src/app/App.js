@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 import Container from "react-bootstrap/Container";
 import Home from "../home/Home";
 import About from "../about/About";
@@ -17,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container>
-          <Navbar expand="sm">
+          <Navbar collapseOnSelect expand="lg">
             {/* TODO: Refactor to Link */}
             <Navbar.Brand>
               Count to <span>Ten</span>
@@ -25,46 +26,21 @@ class App extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <NavLink
-                  exact
-                  to="/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/play"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Play
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/characters"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Characters
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/books"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Books
-                </NavLink>
-                <NavLink
-                  exact
-                  to="/about"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  About
-                </NavLink>
+                <LinkContainer exact to="/">
+                  <Nav.Link>Home</Nav.Link>
+                </LinkContainer>
+                <LinkContainer exact to="/play">
+                  <Nav.Link>Play</Nav.Link>
+                </LinkContainer>
+                <LinkContainer exact to="/characters">
+                  <Nav.Link>Characters</Nav.Link>
+                </LinkContainer>
+                <LinkContainer exact to="/books">
+                  <Nav.Link>Books</Nav.Link>
+                </LinkContainer>
+                <LinkContainer exact to="/about">
+                  <Nav.Link>About</Nav.Link>
+                </LinkContainer>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
