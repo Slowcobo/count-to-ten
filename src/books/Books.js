@@ -42,7 +42,9 @@ class Books extends Component {
                 <Image className="Book-img" src={zowenmakes10} fluid />
               </Col>
               <Col>
-                <div className="Book-title">And Zowen Makes 10!</div>
+                <div className="Book-title-container">
+                  <div className="Book-title">And Zowen Makes 10!</div>
+                </div>
                 <div className="Book-description">
                   <p>
                     The day has finally arrived. It’s the class field trip to
