@@ -64,16 +64,6 @@ button:focus {
   padding: 0;
 }
 
-.navbar-brand {
-  color: rgba(0, 0, 0, 0.7) !important;
-  font-size: 2.6rem;
-  font-family: "Londrina Solid", cursive;
-}
-
-.navbar-brand span {
-  color: #c5243a;
-}
-
 .nav-link {
   color: rgba(0, 0, 0, 0.8) !important;
   font-size: 1.5rem;
@@ -84,6 +74,18 @@ button:focus {
 
 .nav-link:hover,
 .active {
+  color: #c5243a !important;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-size: 2.6rem !important;
+  font-family: "Londrina Solid", cursive !important;
+}
+
+.navbar-brand span,
+.navbar-brand:hover span {
   color: #c5243a !important;
 }
 
